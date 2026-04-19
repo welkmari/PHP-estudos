@@ -17,6 +17,8 @@ $result = pg_query( $conn, $instrucaoSQL ) or die(' Ocorreu um erro na execuçã
 //pg_query($dbcon, "SELECT id, nome FROM clientes");
 
 //Imprimindo os dados da consulta
+
+
 while ($row = pg_fetch_array( $result )){
 	echo $row['nome'] . "\t";
 	echo $row['cpf'] . "\t";
